@@ -162,12 +162,12 @@ game:GetService("RunService").Heartbeat:connect(function(step)if flying and c an
   tab3:Label("PLAYER WALK SPEED")
   
   local settings = {
-      WalkSpeed = 16,
-      JumpPower = 50
+      WALKSPEED = 16,
+      JUMPPOWER = 50
   }
   
   local function setWalkSpeed(value)
-      settings.WalkSpeed = value
+      settings.WALKSPEED = value
       local player = game:GetService("Players").LocalPlayer
       local character = player.Character
       local humanoid = character and character:FindFirstChild("Humanoid")
@@ -187,7 +187,7 @@ game:GetService("RunService").Heartbeat:connect(function(step)if flying and c an
   tab3:Label("PLAYER JUMPPOWER")
   
   local function setJumpPower(value)
-      settings.JumpPower = value
+      settings.JUMPPOWER = value
       local player = game:GetService("Players").LocalPlayer
       local character = player.Character
       local humanoid = character and character:FindFirstChild("Humanoid")
