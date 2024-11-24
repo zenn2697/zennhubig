@@ -59,7 +59,7 @@ game:GetService("RunService").Heartbeat:connect(function(step)if flying and c an
   local originalHitboxSize = Vector3.new(1, 1, 1)
   local hitboxSize = 4
   
-  local tab = win:Tab("MainTAB")
+  local tab = win:Tab("MAINTAB")
 
 -- not really a silent aim just shoots the closest enemy player lol
 -- also could be patched since i havent updated it for awhile 
@@ -115,7 +115,7 @@ game:GetService("RunService").Heartbeat:connect(function(step)if flying and c an
   -- JUST ESP
   local aj = loadstring(game:HttpGet("https://raw.githubusercontent.com/StevenK-293/Loadstrings/main/esp.lua"))()
   
-  Visual:Toggle("THIS ESP WILL NOT WORK FOR FFA OR ZONEWARS", false, function(K)
+  Visual:Toggle("THIS ESP WILL NOT WORK FOR FFA OR ZW", false, function(K)
       aj:Toggle(K)
       aj.Players = K
   end)
